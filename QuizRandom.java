@@ -47,6 +47,19 @@ public class QuizRandom {
 			}
 		}
 		System.out.println(userCode);
+
+
+		 String userCode = "";
+		
+		for(int i=0 ; i<5 ; i++) {
+			int a = random.nextInt(2);
+			if(a == 1) {
+				userCode += (char)(random.nextInt(10) + '0');
+			} else{
+				userCode += (char)(random.nextInt('Z'-'A'+1)+'A');
+			}
+
+		}System.out.println(userCode);
 			
 	
 		
