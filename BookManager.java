@@ -1,18 +1,28 @@
-package ch01_basic;
+package ch03_getter_setter;
 
 public class BookManager {
 	public static void main(String[] args) {
+		
 		Book bookA = new Book();
-		bookA.name = "집가고싶다";
-		bookA.writer = "몰라";
-		bookA.where = "3번 진열장";
-		bookA.prise = 1000;
+		
+		bookA.setname("개미");
+		bookA.setwriter("누군가가");
+		bookA.setwhere('A');
+		bookA.setprise(2000);
 		
 		bookA.info();
 		
+		System.out.println();
+		
 		Book bookB = new Book();
-		bookB.setinfo("집가고싶다", "몰라", "3번 진열장", 1000);
+		
+		bookB.setname("qwer");
+		bookB.setwriter("나");
+		bookB.setwhere('f');
+		bookB.setprise(-2000);
+		
 		bookB.info();
 		
 	}
+
 }
